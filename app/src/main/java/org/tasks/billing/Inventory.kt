@@ -53,7 +53,7 @@ class Inventory @Inject constructor(
                 purchases[purchase.sku] = purchase
             }
         }
-        hasPro = purchases.values.any { it.isProSubscription } || purchases.containsKey(SKU_VIP)
+        hasPro = true
         updateSubscription()
     }
 
